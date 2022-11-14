@@ -13,7 +13,8 @@
     "paths": {
       "@/*": ["*"],
       "@/tests/*": ["../tests/*"]
-    }
+    },
+    "strict": true
   },
   "include": ["src"]
 }
