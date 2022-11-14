@@ -8,12 +8,16 @@
     "node": "16.x"
   },
   "scripts": {
-    "build": "rimraf dist && tsc"
+    "build": "rimraf dist && tsc",
+    "start": "node dist/main/api"
   },
   "devDependencies": {
+    "@types/module-alias": "^2.0.1",
+    "@types/node": "^18.11.9",
     "typescript": "^4.8.4"
   },
   "dependencies": {
+    "module-alias": "^2.2.2",
     "rimraf": "^3.0.2"
   }
 }
