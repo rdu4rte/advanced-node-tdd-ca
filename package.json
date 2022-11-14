@@ -3,5 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Raul Duarte <raulduarte94@hotmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
 }
