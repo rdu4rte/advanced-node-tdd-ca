@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Raul Duarte <raulduarte94@hotmail.com>",
-  "license": "MIT",
+  "license": "UNLICENSED",
+  "private": true,
   "engines": {
     "node": "16.x"
   },
@@ -11,9 +12,13 @@
     "build": "rimraf dist && tsc -p tsconfig-build.json",
     "start": "node dist/main/api",
     "lint": "eslint .",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "test": "jest --passWithNoTests --no-cache --runInBand",
+    "test:watch": "yarn test --watch",
+    "test:cov": "yarn test --coverage"
   },
   "devDependencies": {
+    "@types/jest": "^29.2.2",
     "@types/module-alias": "^2.0.1",
     "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
@@ -22,6 +27,8 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3",
     "typescript": "^4.8.4"
   },
   "dependencies": {
